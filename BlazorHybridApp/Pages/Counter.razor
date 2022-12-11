@@ -1,0 +1,14 @@
+﻿@inherits Fluxor.Blazor.Web.Components.FluxorComponent
+@page "/"
+
+<h1>Counter with Fluxor</h1>
+
+<p role="status">Current count: @AppStore.CurrentCount</p>
+
+<button class="btn btn-primary mb-5" @onclick="IncrementCount">Click me</button>
+
+<h1>Counter with local function</h1>
+
+<p role="status">Current count: @_count</p>
+
+<button class="btn btn-primary" @onclick="IncrementCountLocalFunction">Click me</button>
